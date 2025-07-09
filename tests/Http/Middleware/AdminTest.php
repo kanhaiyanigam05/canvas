@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Tests\Http\Middleware;
+namespace Kanhaiyanigam05\Tests\Http\Middleware;
 
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 /**

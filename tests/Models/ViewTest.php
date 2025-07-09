@@ -1,10 +1,10 @@
 <?php
 
-namespace Canvas\Tests\Models;
+namespace Kanhaiyanigam05\Tests\Models;
 
-use Canvas\Models\Post;
-use Canvas\Models\View;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\View;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

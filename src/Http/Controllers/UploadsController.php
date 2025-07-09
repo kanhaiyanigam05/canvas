@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Canvas;
+use Kanhaiyanigam05\Canvas;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
 

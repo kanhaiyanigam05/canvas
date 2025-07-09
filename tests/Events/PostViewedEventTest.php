@@ -1,10 +1,10 @@
 <?php
 
-namespace Canvas\Tests\Events;
+namespace Kanhaiyanigam05\Tests\Events;
 
-use Canvas\Events\PostViewed;
-use Canvas\Models\Post;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Events\PostViewed;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 /**

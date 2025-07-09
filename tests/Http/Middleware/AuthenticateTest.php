@@ -1,14 +1,14 @@
 <?php
 
-namespace Canvas\Tests\Http\Middleware;
+namespace Kanhaiyanigam05\Tests\Http\Middleware;
 
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 /**
  * Class AuthorizeTest.
  *
- * @covers \Canvas\Http\Middleware\Authenticate
+ * @covers \Kanhaiyanigam05\Http\Middleware\Authenticate
  */
 class AuthenticateTest extends TestCase
 {

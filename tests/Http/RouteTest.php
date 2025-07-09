@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Tests\Http;
+namespace Kanhaiyanigam05\Tests\Http;
 
-use Canvas\Canvas;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Canvas;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Support\Facades\Config;
 
 class RouteTest extends TestCase

@@ -1,10 +1,10 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Canvas;
-use Canvas\Http\Requests\UserRequest;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Canvas;
+use Kanhaiyanigam05\Http\Requests\UserRequest;
+use Kanhaiyanigam05\Models\User;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;

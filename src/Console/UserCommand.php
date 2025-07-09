@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Console;
+namespace Kanhaiyanigam05\Console;
 
-use Canvas\Canvas;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Canvas;
+use Kanhaiyanigam05\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Ramsey\Uuid\Uuid;

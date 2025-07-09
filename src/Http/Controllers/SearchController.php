@@ -1,11 +1,11 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Models\Post;
-use Canvas\Models\Tag;
-use Canvas\Models\Topic;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\Tag;
+use Kanhaiyanigam05\Models\Topic;
+use Kanhaiyanigam05\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;

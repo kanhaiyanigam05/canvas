@@ -1,10 +1,10 @@
 <?php
 
-namespace Canvas\Listeners;
+namespace Kanhaiyanigam05\Listeners;
 
-use Canvas\Canvas;
-use Canvas\Events\PostViewed;
-use Canvas\Models\Post;
+use Kanhaiyanigam05\Canvas;
+use Kanhaiyanigam05\Events\PostViewed;
+use Kanhaiyanigam05\Models\Post;
 
 class CaptureVisit
 {

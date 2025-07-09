@@ -1,11 +1,11 @@
 <?php
 
-namespace Canvas\Tests\Models;
+namespace Kanhaiyanigam05\Tests\Models;
 
-use Canvas\Models\Post;
-use Canvas\Models\Tag;
-use Canvas\Models\User;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\Tag;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Testing\RefreshDatabase;

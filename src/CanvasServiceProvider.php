@@ -2,16 +2,16 @@
 
 namespace Canvas;
 
-use Canvas\Console\DigestCommand;
-use Canvas\Console\InstallCommand;
-use Canvas\Console\MigrateCommand;
-use Canvas\Console\PublishCommand;
-use Canvas\Console\UiCommand;
-use Canvas\Console\UserCommand;
-use Canvas\Events\PostViewed;
-use Canvas\Listeners\CaptureView;
-use Canvas\Listeners\CaptureVisit;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Console\DigestCommand;
+use Kanhaiyanigam05\Console\InstallCommand;
+use Kanhaiyanigam05\Console\MigrateCommand;
+use Kanhaiyanigam05\Console\PublishCommand;
+use Kanhaiyanigam05\Console\UiCommand;
+use Kanhaiyanigam05\Console\UserCommand;
+use Kanhaiyanigam05\Events\PostViewed;
+use Kanhaiyanigam05\Listeners\CaptureView;
+use Kanhaiyanigam05\Listeners\CaptureVisit;
+use Kanhaiyanigam05\Models\User;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\Route;
@@ -80,7 +80,7 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function configureRoutes(): void
     {
-        Route::namespace('Canvas\Http\Controllers')
+        Route::namespace('Kanhaiyanigam05\Http\Controllers')
              ->middleware(config('canvas.middleware'))
              ->domain(config('canvas.domain'))
              ->prefix(config('canvas.path'))

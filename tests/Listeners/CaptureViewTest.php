@@ -1,11 +1,11 @@
 <?php
 
-namespace Canvas\Tests\Listeners;
+namespace Kanhaiyanigam05\Tests\Listeners;
 
-use Canvas\Events\PostViewed;
-use Canvas\Listeners\CaptureView;
-use Canvas\Models\Post;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Events\PostViewed;
+use Kanhaiyanigam05\Listeners\CaptureView;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 /**

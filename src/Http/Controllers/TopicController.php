@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Http\Requests\TopicRequest;
-use Canvas\Models\Topic;
+use Kanhaiyanigam05\Http\Requests\TopicRequest;
+use Kanhaiyanigam05\Models\Topic;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Tests\Http\Controllers\Auth;
+namespace Kanhaiyanigam05\Tests\Http\Controllers\Auth;
 
-use Canvas\Models\User;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 

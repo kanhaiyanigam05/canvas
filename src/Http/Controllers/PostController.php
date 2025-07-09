@@ -1,12 +1,12 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Http\Requests\PostRequest;
-use Canvas\Models\Post;
-use Canvas\Models\Tag;
-use Canvas\Models\Topic;
-use Canvas\Services\StatsAggregator;
+use Kanhaiyanigam05\Http\Requests\PostRequest;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\Tag;
+use Kanhaiyanigam05\Models\Topic;
+use Kanhaiyanigam05\Services\StatsAggregator;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;

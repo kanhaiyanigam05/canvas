@@ -1,13 +1,13 @@
 <?php
 
-namespace Canvas\Tests\Console;
+namespace Kanhaiyanigam05\Tests\Console;
 
-use Canvas\Mail\WeeklyDigest;
-use Canvas\Models\Post;
-use Canvas\Models\User;
-use Canvas\Models\View;
-use Canvas\Models\Visit;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Mail\WeeklyDigest;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Models\View;
+use Kanhaiyanigam05\Models\Visit;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 

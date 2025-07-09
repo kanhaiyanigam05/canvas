@@ -1,12 +1,12 @@
 <?php
 
-namespace Canvas\Services;
+namespace Kanhaiyanigam05\Services;
 
-use Canvas\Canvas;
-use Canvas\Models\Post;
-use Canvas\Models\User;
-use Canvas\Models\View;
-use Canvas\Models\Visit;
+use Kanhaiyanigam05\Canvas;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Models\View;
+use Kanhaiyanigam05\Models\Visit;
 use Carbon\CarbonInterval;
 use DateInterval;
 use DatePeriod;

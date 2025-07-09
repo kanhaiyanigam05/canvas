@@ -2,9 +2,9 @@
 
 namespace Canvas\Console;
 
-use Canvas\Mail\WeeklyDigest;
-use Canvas\Models\Post;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Mail\WeeklyDigest;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Mail;

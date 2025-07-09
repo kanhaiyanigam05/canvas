@@ -1,14 +1,14 @@
 <?php
 
-namespace Canvas\Tests\Models;
+namespace Kanhaiyanigam05\Tests\Models;
 
-use Canvas\Models\Post;
-use Canvas\Models\Tag;
-use Canvas\Models\Topic;
-use Canvas\Models\User;
-use Canvas\Models\View;
-use Canvas\Models\Visit;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\Tag;
+use Kanhaiyanigam05\Models\Topic;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Models\View;
+use Kanhaiyanigam05\Models\Visit;
+use Kanhaiyanigam05\Tests\TestCase;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

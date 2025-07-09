@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Http\Controllers\Auth;
+namespace Kanhaiyanigam05\Http\Controllers\Auth;
 
-use Canvas\Http\Requests\LoginRequest;
+use Kanhaiyanigam05\Http\Requests\LoginRequest;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;

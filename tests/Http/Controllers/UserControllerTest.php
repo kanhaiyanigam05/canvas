@@ -1,11 +1,11 @@
 <?php
 
-namespace Canvas\Tests\Http\Controllers;
+namespace Kanhaiyanigam05\Tests\Http\Controllers;
 
-use Canvas\Models\Post;
-use Canvas\Models\User;
-use Canvas\Models\View;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Models\View;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Ramsey\Uuid\Uuid;

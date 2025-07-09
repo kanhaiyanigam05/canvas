@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Http\Middleware;
+namespace Kanhaiyanigam05\Http\Middleware;
 
 use Closure;
 use Illuminate\Auth\AuthenticationException;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Tests;
+namespace Kanhaiyanigam05\Tests;
 
-use Canvas\CanvasServiceProvider;
-use Canvas\Models\User;
+use Kanhaiyanigam05\CanvasServiceProvider;
+use Kanhaiyanigam05\Models\User;
 use Exception;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
