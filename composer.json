@@ -1,0 +1,53 @@
+{
+    "name": "kanhaiyanigam05/canvas",
+    "description": "A Laravel publishing platform",
+    "keywords": [
+        "blog",
+        "canvas",
+        "laravel",
+        "publishing",
+        "platform"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kanhaiya"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "laravel/framework": "^12.0"
+    },
+    "require-dev": {
+        "laravel/legacy-factories": "^1.3",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Canvas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Canvas\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Canvas\\CanvasServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
