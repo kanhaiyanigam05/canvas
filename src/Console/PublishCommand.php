@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Console;
+namespace Kanhaiyanigam05\Console;
 
 use Illuminate\Console\Command;
 

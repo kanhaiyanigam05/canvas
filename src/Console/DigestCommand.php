@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Console;
+namespace Kanhaiyanigam05\Console;
 
 use Kanhaiyanigam05\Mail\WeeklyDigest;
 use Kanhaiyanigam05\Models\Post;

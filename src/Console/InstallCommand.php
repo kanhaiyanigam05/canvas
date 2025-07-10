@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Console;
+namespace Kanhaiyanigam05\Console;
 
-use Canvas\Models\User;
+use Kanhaiyanigam05\Models\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
