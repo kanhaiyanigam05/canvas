@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas;
+namespace Kanhaiyanigam05;
 
 use Kanhaiyanigam05\Console\DigestCommand;
 use Kanhaiyanigam05\Console\InstallCommand;
