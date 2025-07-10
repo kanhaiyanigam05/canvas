@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
 use Canvas\Http\Requests\TagRequest;
 use Canvas\Models\Tag;

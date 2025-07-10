@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Http\Controllers\Auth;
+namespace Kanhaiyanigam05\Http\Controllers\Auth;
 
 use Canvas\Mail\ResetPassword;
 use Canvas\Models\User;

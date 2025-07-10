@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas;
+namespace Kanhaiyanigam05;
 
-use Canvas\Models\User;
+use Kanhaiyanigam05\Models\User;
 use Composer\InstalledVersions;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

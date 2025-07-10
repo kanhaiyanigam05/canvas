@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Http\Controllers;
+namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Models\Post;
-use Canvas\Services\StatsAggregator;
+use Kanhaiyanigam05\Models\Post;
+use Kanhaiyanigam05\Services\StatsAggregator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
