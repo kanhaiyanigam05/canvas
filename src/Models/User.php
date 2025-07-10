@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Models;
+namespace Kanhaiyanigam05\Models;
 
-use Canvas\Canvas;
+use Kanhaiyanigam05\Canvas;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
