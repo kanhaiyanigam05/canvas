@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Models;
+namespace Kanhaiyanigam05\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
