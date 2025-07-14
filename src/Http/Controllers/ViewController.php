@@ -17,7 +17,7 @@ class ViewController extends Controller
      */
     public function __invoke()
     {
-
+dd('dsad');
 
         return view('canvas::layout')->with([
             'jsVars' => [
