@@ -114,6 +114,7 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function registerMigrations(): void
     {
+        $router = $this->app->make(Router::class);
         $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
         if ($this->app->runningInConsole()) {
             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
