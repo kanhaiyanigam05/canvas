@@ -81,13 +81,15 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function configureRoutes(): void
     {
-        Route::namespace('Kanhaiyanigam05\Http\Controllers')
-             ->middleware(config('canvas.middleware'))
-             ->domain(config('canvas.domain'))
-             ->prefix(config('canvas.path'))
-             ->group(function () {
-                 $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-             });
+        Route::group([
+        'middleware' => config('canvas.middleware'),
+        'domain' => config('canvas.domain'),
+        'prefix' => config('canvas.path'),
+        'namespace' => 'Kanhaiyanigam05\Http\Controllers',
+    ], function () {
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+    });
+
     }
 
     /**
