@@ -31,7 +31,7 @@ class Authenticate
         // For all other routes, check authentication
         if (!$this->auth->guard('canvas')->check()) {
             throw new AuthenticationException(
-                'Unauthenticated.', ['canvas'], route('canvas.login')
+//                'Unauthenticated.', ['canvas'], route('canvas.login')
             );
         }
 
