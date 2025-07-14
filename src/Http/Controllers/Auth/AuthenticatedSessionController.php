@@ -21,7 +21,6 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        return 20;
         if (Auth::guard('canvas')->check()) {
             return redirect()->route('canvas');
         }
