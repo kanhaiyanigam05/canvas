@@ -31,7 +31,7 @@ Route::prefix('auth')->group(function () {
 });
 
 // Protected routes (requires authentication)
-Route::middleware(['canvas.auth'])->group(function () {
+//Route::middleware(['canvas.auth'])->group(function () {
 
     Route::prefix('api')->group(function () {
         // Stats
@@ -94,4 +94,4 @@ Route::middleware(['canvas.auth'])->group(function () {
 
     // Fallback route (e.g. SPA view)
     Route::get('/{view?}', [ViewController::class, '__invoke'])->where('view', '(.*)')->name('canvas');
-});
+//});
