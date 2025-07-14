@@ -16,6 +16,7 @@ use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Routing\Router;
 
 class CanvasServiceProvider extends ServiceProvider
 {
@@ -113,8 +114,10 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function registerMigrations(): void
     {
+        $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
         if ($this->app->runningInConsole()) {
             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
         }
     }
 
