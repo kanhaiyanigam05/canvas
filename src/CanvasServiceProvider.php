@@ -41,6 +41,7 @@ class CanvasServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'canvas');
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'canvas');
+        $this->registerMiddleware(); // <--- register here
         $this->configurePublishing();
         $this->configureRoutes();
         $this->configureCommands();
@@ -114,15 +115,14 @@ class CanvasServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    private function registerMigrations(): void
+    private function registerMiddleware(): void
     {
         $router = $this->app->make(Router::class);
-        $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
-        if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        }
+        // Register 'canvas.auth' as an alias
+        $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
     }
+
 
     /**
      * Register the package's authentication driver.
