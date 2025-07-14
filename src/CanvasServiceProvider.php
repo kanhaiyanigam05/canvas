@@ -120,6 +120,7 @@ class CanvasServiceProvider extends ServiceProvider
         $router = $this->app->make(\Illuminate\Routing\Router::class);
         $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
         $router->aliasMiddleware('canvas.admin', \Kanhaiyanigam05\Http\Middleware\Admin::class);
+        $router->pushMiddlewareToGroup('web', Authenticate::class);
     }
 
 
