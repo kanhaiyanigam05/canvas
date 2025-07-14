@@ -45,7 +45,7 @@ class CanvasServiceProvider extends ServiceProvider
         $this->configurePublishing();
         $this->configureRoutes();
         $this->configureCommands();
-        $this->registerMigrations();
+        $this->registerMiddleware();
         $this->registerAuthDriver();
         $this->registerEvents();
     }
@@ -117,11 +117,11 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function registerMiddleware(): void
     {
-        $router = $this->app->make(Router::class);
-
-        // Register 'canvas.auth' as an alias
+        $router = $this->app->make(\Illuminate\Routing\Router::class);
         $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
+        $router->aliasMiddleware('canvas.admin', \Kanhaiyanigam05\Http\Middleware\Admin::class);
     }
+
 
 
     /**
