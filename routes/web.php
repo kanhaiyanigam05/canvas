@@ -11,6 +11,8 @@ use Kanhaiyanigam05\Http\Controllers\TopicController;
 use Kanhaiyanigam05\Http\Controllers\UserController;
 use Kanhaiyanigam05\Http\Controllers\SearchController;
 use Kanhaiyanigam05\Http\Controllers\ViewController;
+use Kanhaiyanigam05\Http\Middleware\Authenticate;
+use Kanhaiyanigam05\Http\Middleware\Admin;
 
 // Public routes (no auth)
 Route::prefix('auth')->group(function () {
@@ -31,7 +33,7 @@ Route::prefix('auth')->group(function () {
 });
 
 // Protected routes (requires authentication)
-Route::middleware(['canvas.auth'])->group(function () {
+Route::middleware([Authenticate::class])->group(function () {
 
     Route::prefix('api')->group(function () {
         // Stats

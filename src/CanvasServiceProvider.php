@@ -16,7 +16,6 @@ use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Routing\Router;
 
 class CanvasServiceProvider extends ServiceProvider
 {
@@ -41,11 +40,10 @@ class CanvasServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'canvas');
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'canvas');
-        $this->registerMiddleware(); // <--- register here
         $this->configurePublishing();
         $this->configureRoutes();
         $this->configureCommands();
-        $this->registerMiddleware();
+        $this->registerMigrations();
         $this->registerAuthDriver();
         $this->registerEvents();
     }
@@ -82,15 +80,13 @@ class CanvasServiceProvider extends ServiceProvider
      */
     private function configureRoutes(): void
     {
-        Route::group([
-        'middleware' => config('canvas.middleware'),
-        'domain' => config('canvas.domain'),
-        'prefix' => config('canvas.path'),
-        'namespace' => 'Kanhaiyanigam05\Http\Controllers',
-    ], function () {
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-    });
-
+        Route::namespace('Kanhaiyanigam05\Http\Controllers')
+            ->middleware(config('canvas.middleware'))
+            ->domain(config('canvas.domain'))
+            ->prefix(config('canvas.path'))
+            ->group(function () {
+                $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+            });
     }
 
     /**
@@ -115,15 +111,12 @@ class CanvasServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    private function registerMiddleware(): void
+    private function registerMigrations(): void
     {
-        $router = $this->app->make(\Illuminate\Routing\Router::class);
-        $router->aliasMiddleware('canvas.auth', \Kanhaiyanigam05\Http\Middleware\Authenticate::class);
-        $router->aliasMiddleware('canvas.admin', \Kanhaiyanigam05\Http\Middleware\Admin::class);
-        $router->pushMiddlewareToGroup('web', Authenticate::class);
+        if ($this->app->runningInConsole()) {
+            $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        }
     }
-
-
 
     /**
      * Register the package's authentication driver.

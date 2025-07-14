@@ -41,7 +41,6 @@ return [
 
     'middleware' => [
         'web',
-        'canvas.auth',
     ],
 
     /*

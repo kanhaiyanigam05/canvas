@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Kanhaiyanigam05\Http\Middleware;
@@ -10,32 +9,42 @@ use Illuminate\Http\Request;
 
 class Authenticate
 {
+    /**
+     * The authentication factory instance.
+     *
+     * @var Auth
+     */
     protected $auth;
 
+    /**
+     * Create a new middleware instance.
+     *
+     * @param  Auth  $auth
+     */
     public function __construct(Auth $auth)
     {
         $this->auth = $auth;
     }
 
+    /**
+     * Handle the incoming request.
+     *
+     * @param  Request  $request
+     * @param  Closure  $next
+     * @return mixed
+     *
+     * @throws AuthenticationException
+     */
     public function handle(Request $request, Closure $next)
     {
-        // Allow access to login page without authentication check
-        if ($request->is('canvas/auth/login')) {
-            // If already authenticated, redirect to canvas dashboard
-            if ($this->auth->guard('canvas')->check()) {
-                return redirect(config('canvas.path'));
-            }
-            return $next($request);
-        }
-
-        // For all other routes, check authentication
-        if (!$this->auth->guard('canvas')->check()) {
+        if ($this->auth->guard('canvas')->check()) {
+            $this->auth->shouldUse('canvas');
+        } else {
             throw new AuthenticationException(
-//                'Unauthenticated.', ['canvas'], route('canvas.login')
+                'Unauthenticated.', ['canvas'], route('canvas.login')
             );
         }
 
-        $this->auth->shouldUse('canvas');
         return $next($request);
     }
 }
