@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Tests\Http\Controllers;
+namespace Kanhaiyanigam05\Tests\Http\Controllers;
 
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

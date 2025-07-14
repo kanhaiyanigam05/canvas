@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Mail;
+namespace Kanhaiyanigm05\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

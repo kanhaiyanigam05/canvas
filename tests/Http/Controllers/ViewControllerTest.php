@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Tests\Http\Controllers;
+namespace Kanhaiyanigam05\Tests\Http\Controllers;
 
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Tests\TestCase;
 
 /**
  * Class ViewControllerTest.

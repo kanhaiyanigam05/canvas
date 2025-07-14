@@ -2,8 +2,8 @@
 
 namespace Kanhaiyanigam05\Http\Controllers;
 
-use Canvas\Http\Requests\TagRequest;
-use Canvas\Models\Tag;
+use Kanhaiyanigam05\Http\Requests\TagRequest;
+use Kanhaiyanigam05\Models\Tag;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;

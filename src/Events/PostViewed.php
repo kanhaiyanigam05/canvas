@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Events;
+namespace Kanhaiyanigam05\Events;
 
-use Canvas\Models\Post;
+use Kanhaiyanigam05\Models\Post;
 
 class PostViewed
 {

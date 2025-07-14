@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Tests\Mail;
+namespace Kanhaiyanigam05\Tests\Mail;
 
-use Canvas\Mail\ResetPassword;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Mail\ResetPassword;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 

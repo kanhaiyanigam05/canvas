@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Tests\Console;
+namespace Kanhaiyanigam05\Tests\Console;
 
-use Canvas\Models\User;
-use Canvas\Tests\TestCase;
+use Kanhaiyanigam05\Models\User;
+use Kanhaiyanigam05\Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 /**

@@ -2,8 +2,8 @@
 
 namespace Kanhaiyanigam05\Http\Controllers\Auth;
 
-use Canvas\Mail\ResetPassword;
-use Canvas\Models\User;
+use Kanhaiyanigam05\Mail\ResetPassword;
+use Kanhaiyanigam05\Models\User;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
