@@ -21,7 +21,7 @@ class Canvas
             return '';
         }
 
-        return InstalledVersions::getPrettyVersion('Kanhaiyanigam05/canvas');
+        return InstalledVersions::getPrettyVersion('kanhaiyanigam05/canvas');
     }
 
     /**
